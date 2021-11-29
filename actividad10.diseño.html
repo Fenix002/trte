@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 10</title>
+</head>
+<body>
+    <svg stroke-width="1px" width="400" height="500">
+    <defs>
+        <linearGradient id="arbol">
+           <stop offset="0%" stop-color="#974C0E"></stop>
+           <stop offset="100%" stop-color="#5F3818"></stop>
+        </linearGradient>
+    </defs>
+  // imagen con el fondo
+    <image x="0" y="0" width="450" height="550" xlink:href="image/imagenn.jpg" ></image>
+        <rect width="400" height="500"
+        style="fill:none;stroke:black;stroke-width:1;"/>
+        <text x="12.5" y="50"
+                font-family="Arial"
+                fill="#9a6600"
+                font-size="50px"
+                font-weight="bold">
+            ¡Felices fiestas!
+        </text>
+
+        <g transform="rotate(30) scale(0.9)">
+            <polygon points="200,40 175,100 235,100"
+                    fill="grey"
+                    stroke-width="2"/>
+            <polygon points="200,70 175,130 235,130"
+                    fill="grey"
+                    stroke-width="2"/>
+            <polygon points="200,100 175,150 235,150"
+                    fill="grey"
+                    stroke-width="2"/>
+            <rect x="200" y="150" width="15" height="50" style="fill:grey;stroke-width:2"/>
+        </g>
+        //arbol 1 con sombra
+        <polygon points="70,150 40,200 100,200"
+                fill="green"
+                stroke="#2FCD13"
+                stroke-width="2"/>
+        <polygon points="70,120 40,170 100,170"
+                fill="green"
+                stroke="#2FCD13"
+                stroke-width="2"/>
+        <polygon points="70,90 40,140 100,140"
+                fill="green"
+                stroke="#2FCD13"
+                stroke-width="2"/>
+            <rect x="62" y="200" width="15" height="50" style="fill:url(#arbol);stroke-width:2"/>
+        //arbol 2 sin sombra
+        <polygon points="300,290 260,350 340,350"
+            fill="green"
+            stroke="#2FCD13"
+            stroke-width="2"/>
+        <polygon points="300,260 260,320 340,320"
+            fill="green"
+            stroke="#2FCD13"
+            stroke-width="2"/>
+      <polygon points="300,230 260,290 340,290"
+            fill="green"
+            stroke="#2FCD13"
+            stroke-width="2"/>
+        <rect x="288" y="350" width="25" height="60" style="fill:url(#arbol);stroke-width:2"/>
+
+    </svg>  
+</body>
+</html>
